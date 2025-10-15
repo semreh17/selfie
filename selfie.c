@@ -39,7 +39,6 @@ void cameraDraw() {
 
 
 int main() {
-    // Comando per fswebcam: scatta 1 frame, salvalo come selfie.jpg
     const char *command_format = "fswebcam -r 1280x720 --frames 1 %s";
     char command[256];
     const char *filename = "selfie.jpg";

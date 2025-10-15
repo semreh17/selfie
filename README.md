@@ -9,4 +9,4 @@ gcc selfie.c -o selfie
 sudo mv selfie /usr/local/bin/
 ```
 
-have fun taking selfies
+now write "selfie" in the terminal and have fun taking selfies
