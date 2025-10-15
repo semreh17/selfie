@@ -8,3 +8,5 @@ sudo apt install fswebcam
 gcc selfie.c -o selfie
 sudo mv selfie /usr/local/bin/
 ```
+
+have fun taking selfies
