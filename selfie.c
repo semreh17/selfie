@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 void cameraDraw() {
     printf("            ___ \n");
@@ -48,5 +49,10 @@ int main() {
 
     system(command);
     system("open selfie.jpg");
+    sleep(1);
+    write(STDOUT_FILENO, "\x1b[2J", 4);		// tries to clean the screen but the opened image prevents it
+	write(STDOUT_FILENO, "\x1b[H", 3);		// move cursor (0, 0)
+    write(STDOUT_FILENO, "\x03", 1);        // end of text
+    
     return EXIT_SUCCESS;
 }
